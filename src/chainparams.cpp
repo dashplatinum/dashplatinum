@@ -141,8 +141,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x0000069ba7f3a458b856489ce849e6c8bdcc2761afe28e28954393dc193855b3"));
         assert(genesis.hashMerkleRoot == uint256S("0x636492005f78ca9415055645390bff1716dbb8fdadf3c638eb1865651abde54f"));
 
-        vSeeds.push_back(CDNSSeedData("shirako.io", "dashp.seed.shirako.io"));
-        vSeeds.push_back(CDNSSeedData("dash-platinum.org", "seed.dash-platinum.org"));
+        vSeeds.push_back(CDNSSeedData("dash-platinum.org", "seeds.dash-platinum.org"));
 
         // Dash Platinum addresses start with 'D'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
@@ -254,7 +253,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("dash-platinum.org", "testnet-seed.dash-platinum.org"));
+        vSeeds.push_back(CDNSSeedData("dash-platinum.org", "testnet-seeds.dash-platinum.org"));
 
         // Testnet Dash addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
