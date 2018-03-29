@@ -1,10 +1,5 @@
-Dash Core staging tree 0.12.2
+Dash Platinum Core staging 
 ===============================
-
-`master:` [![Build Status](ttps://travis-ci.org/dashpay/dash.svg?branch=master)
-
-ttps://travis-ci.org/dashpay/dash.svg?branch=master
-
 
 What is Dash Platinum?
 ----------------
