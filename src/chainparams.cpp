@@ -126,10 +126,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x6b;
-        pchMessageStart[1] = 0x59;
-        pchMessageStart[2] = 0xa4;
-        pchMessageStart[3] = 0x23;
+        pchMessageStart[0] = 0x54;
+        pchMessageStart[1] = 0xc0;
+        pchMessageStart[2] = 0x0b;
+        pchMessageStart[3] = 0x01;
         vAlertPubKey = ParseHex("049c181c1e52223942fcf54a2a992be27c019cac8f2b968c7a780b3154d2d8bdd8ca0dd4700fb0e53ff1ace44eeff5a3dcbe03fcf7baea9e8fed8af07f90a2d484");
         nDefaultPort = 7878;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
@@ -237,10 +237,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0");
 
-        pchMessageStart[0] = 0x93;
-        pchMessageStart[1] = 0x46;
-        pchMessageStart[2] = 0x35;
-        pchMessageStart[3] = 0x9e;
+        pchMessageStart[0] = 0xcd;
+        pchMessageStart[1] = 0x4a;
+        pchMessageStart[2] = 0x14;
+        pchMessageStart[3] = 0x42;
         vAlertPubKey = ParseHex("047503fba9aaf9dbfee5facf894fef64de4d4174c5078232fc25e950ef99738375d23d607ade8c72b918ba864c462f451a6f85ea31738bcf4b5d5884026ca26df1");
         nDefaultPort = 17878;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
