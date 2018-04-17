@@ -13,7 +13,7 @@
  * for both dashd and dash-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Dash Platinum Core");
+const std::string CLIENT_NAME("Dash Platinum Core 2");
 
 /**
  * Client version number

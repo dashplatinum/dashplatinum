@@ -522,7 +522,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.dashplatinum
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "DashPlatinum";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "DashPlatinum2";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -532,10 +532,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/DashPlatinum";
+    return pathRet / "Library/Application Support/DashPlatinum2";
 #else
     // Unix
-    return pathRet / ".dashplatinum";
+    return pathRet / ".dashplatinum2";
 #endif
 #endif
 }
