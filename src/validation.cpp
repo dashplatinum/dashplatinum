@@ -1250,7 +1250,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
-    CAmount ret = static_cast<CAmount>(blockValue * 0.72); // 72%
+    CAmount ret = blockValue * 0.72; // 72%
     return ret;
 }
 
