@@ -1227,6 +1227,11 @@ double ConvertBitsToDouble(unsigned int nBits)
 NOTE:   unlike bitcoin we are using PREVIOUS block height here,
         might be a good idea to change this to use prev bits
         but current height to avoid confusion.
+
+        Total: 4000 DASHP
+        Governance: 400 DASHP (10%)
+        Reward MN: 2880 DASHP (72%)
+        Reward PoW: 720 DASHP (18%)
 */
 CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params& consensusParams, bool fSuperblockPartOnly)
 {
@@ -1250,7 +1255,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
-    CAmount ret = blockValue * 0.72; // 72%
+    CAmount ret = blockValue * 0.80; // 0.9 * __0.8__ = 0.72
     return ret;
 }
 
