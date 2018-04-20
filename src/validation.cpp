@@ -1262,7 +1262,7 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
     else
         payment *= 0.80; // 0.9 * __0.8__ = 0.72
 
-    return ret;
+    return payment;
 }
 
 bool IsInitialBlockDownload()
